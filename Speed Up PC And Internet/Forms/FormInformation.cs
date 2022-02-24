@@ -19,7 +19,7 @@ namespace Speed_Up_PC_And_Internet
 
         private void linkLblGithubProfile_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo("https://www.github.com/canermastan") { UseShellExecute = true });
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo("https://github.com/canermastan/Speed-Up-PC-And-Internet") { UseShellExecute = true });
         }
 
         private void linkLblContactMe_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
