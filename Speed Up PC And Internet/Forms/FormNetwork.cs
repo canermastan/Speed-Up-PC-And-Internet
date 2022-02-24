@@ -37,18 +37,17 @@ namespace Speed_Up_PC_And_Internet
                 {
                     key1.SetValue("TcpAckFrequency", 1);
                     key2.SetValue("TCPNoDelay", 1);
-                    MessageBox.Show("Islem basarili", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Nagle Algoritması Uygulandı.", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("HATA OLUŞTU!\n\nHATA : " + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Nagle Algoritması uygulanırken bir sorunla karşılaşıldı!\n\nHATA : " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }
             else
             {
-                MessageBox.Show("NULL!\n" + key1 + "\n" + key2, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
         }
@@ -60,11 +59,11 @@ namespace Speed_Up_PC_And_Internet
             try
             {
                 key.SetValue("NetworkThrottlingIndex", 0xffffffff);
-
+                MessageBox.Show("Ağ daralması kapatıldı.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("HATA OLUŞTU!\n\n" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ağ daralması kapatılırken bir hata oluştu!\n\nHata: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -102,6 +101,7 @@ namespace Speed_Up_PC_And_Internet
             if (msmq == null)
             {
                 process.Start();
+                MessageBox.Show("MSMQ başarılı bir şekilde aktifleştirildi.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -117,7 +117,6 @@ namespace Speed_Up_PC_And_Internet
         private void btnNetworkContractionOff_Click(object sender, EventArgs e)
         {
             NetworkContractionOff();
-            MessageBox.Show("Ağ daralması kapatıldı.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnClearCache_Click(object sender, EventArgs e)

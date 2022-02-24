@@ -37,7 +37,6 @@ namespace Speed_Up_PC_And_Internet
                     try
                     {
                         File.Delete(file);
-                        Directory.Delete(path,true);
                     }
                     catch
                     {
