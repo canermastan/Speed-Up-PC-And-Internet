@@ -141,7 +141,7 @@
             // 
             // btnHome
             // 
-            this.btnHome.Image = global::Speed_Up_PC_And_Internet.Properties.Resources._1;
+            this.btnHome.Image = global::Speed_Up_PC_And_Internet.Properties.Resources.logo;
             this.btnHome.Location = new System.Drawing.Point(40, 3);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(133, 122);
@@ -177,7 +177,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Image = global::Speed_Up_PC_And_Internet.Properties.Resources.xmark1;
+            this.btnExit.Image = global::Speed_Up_PC_And_Internet.Properties.Resources.xmark;
             this.btnExit.Location = new System.Drawing.Point(843, 0);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(25, 40);
@@ -244,7 +244,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Speed_Up_PC_And_Internet.Properties.Resources._1;
+            this.pictureBox1.Image = global::Speed_Up_PC_And_Internet.Properties.Resources.logo;
             this.pictureBox1.Location = new System.Drawing.Point(259, 42);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(299, 283);

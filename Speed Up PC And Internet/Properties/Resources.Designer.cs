@@ -63,9 +63,9 @@ namespace Speed_Up_PC_And_Internet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _1 {
+        internal static System.Drawing.Bitmap logo {
             get {
-                object obj = ResourceManager.GetObject("1", resourceCulture);
+                object obj = ResourceManager.GetObject("logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,26 +86,6 @@ namespace Speed_Up_PC_And_Internet.Properties {
         internal static System.Drawing.Bitmap xmark {
             get {
                 object obj = ResourceManager.GetObject("xmark", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap xmark_solid {
-            get {
-                object obj = ResourceManager.GetObject("xmark-solid", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap xmark1 {
-            get {
-                object obj = ResourceManager.GetObject("xmark1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
