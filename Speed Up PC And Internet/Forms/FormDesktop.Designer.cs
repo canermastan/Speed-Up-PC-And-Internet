@@ -98,6 +98,7 @@
             this.btnApplyAll.Text = "Uygula";
             this.btnApplyAll.TextColor = System.Drawing.Color.White;
             this.btnApplyAll.UseVisualStyleBackColor = false;
+            this.btnApplyAll.Click += new System.EventHandler(this.btnApplyAll_Click);
             // 
             // label1
             // 

@@ -92,5 +92,15 @@ namespace Speed_Up_PC_And_Internet
         {
             
         }
+
+        private void btnApplyAll_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Önbellek temizleniyor...", "İşlem Başlatıldı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ClearCache();
+            MessageBox.Show("Önbellek temizlendi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            DisableServices();
+            MessageBox.Show("Gereksiz servisler kapatıldı.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
