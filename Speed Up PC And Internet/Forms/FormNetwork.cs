@@ -61,9 +61,8 @@ namespace Speed_Up_PC_And_Internet
                 key.SetValue("NetworkThrottlingIndex", 0xffffffff);
                 MessageBox.Show("Ağ daralması kapatıldı.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show("Ağ daralması kapatılırken bir hata oluştu!\n\nHata: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
